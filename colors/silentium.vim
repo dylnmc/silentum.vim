@@ -59,14 +59,11 @@ call s:setColor('bg', 2, range(232, 242))
 " light background
 call s:linkColor('lightbg', 'bg', 2)
 
-" dark foreground
-call s:linkColor('darkfg', 'lightbg', 10)
-
 " brighter background
 call s:linkColor('brightbg', 'bg', 2)
 
 " darker foreground
-call s:linkColor('darkerfg', 'brightbg', 10)
+call s:linkColor('darkerfg', 'fg', -10)
 
 " selection
 call s:linkColor('select', 'bg', 8)
@@ -75,7 +72,7 @@ call s:linkColor('select', 'bg', 8)
 call s:setColor('selectfg', 0, [255])
 
 " darker foreground
-call s:linkColor('darkfg', 'fg', -4)
+call s:linkColor('darkfg', 'fg', -6)
 
 " UI background
 call s:linkColor('uibg', 'bg', 5)

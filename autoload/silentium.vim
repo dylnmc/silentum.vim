@@ -95,7 +95,7 @@ function! silentium#color_set_compl(arglead, cmdline, curpos) abort " (:
 endfunction " :)
 
 function! silentium#setup_colors(init) " (:
-	if expand('%:p') !~# '\/colors\/silentium\.vim$' || get(b:, 'silentium_no_setup')
+	if expand('%:p') !~# '\/colors\/silentium\.vim$' || g:colors_name !=# 'silentium' || get(b:, 'silentium_no_setup')
 		return
 	endif
 	nnoremap <buffer> <silent> ) <c-a>:update<cr>
